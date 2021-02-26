@@ -1,0 +1,14 @@
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          neo4j: DEBUG
+
+spring:
+  neo4j:
+    authentication:
+      username: 'neo4j'
+      password: 'secret'
+    uri: 'bolt://localhost:7687'
+
