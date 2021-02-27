@@ -6,4 +6,4 @@ import org.springframework.data.neo4j.core.schema.Node
 import org.springframework.data.neo4j.core.schema.Relationship
 
 @Node
-data class Diary constructor(@Id @GeneratedValue val id: Long? = null, val name: String, @Relationship(type = "ENTRY") val entriesList: List<Entry>)
+data class Diary constructor(@Id @GeneratedValue val id: Long? = null, val name: String, @Relationship(type = "DIARY_TO_ENTRY") val entriesList: List<Entry>)
